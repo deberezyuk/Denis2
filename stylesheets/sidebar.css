@@ -1,0 +1,35 @@
+nav {
+  width: 250px;
+  position: fixed;
+  top: 70px;
+  left: 20px;
+  padding: 30px;
+  opacity: .2;
+  transition: all .8s ease-out;
+}
+/* при наведении курсором на оюъект nav */
+nav:hover {
+  opacity: 1;
+  transition: all .1s ease-out;
+}
+/* все элементы li внутри объекта nav */
+nav li {
+  list-style-type: none;
+  margin: 0 0 20px;
+  height: auto;
+}
+/* все элементы a внутри объекта nav */
+nav a {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 15px;
+}
+/* для первого элемента li внутри ul */
+nav > ul > li:first-child{
+  font-weight: bold;
+}
+/* для второго и последующих элементов ul внутри nac */
+nav ul ul {
+  margin-left: 10px;
+  color: #999;
+}
